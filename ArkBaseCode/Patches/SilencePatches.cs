@@ -90,10 +90,10 @@ internal static class SilenceAddCardPatch
 [HarmonyPatch(typeof(CardPileCmd), nameof(CardPileCmd.AddGeneratedCardsToCombat))]
 internal static class SilenceGenerateCardsPatch
 {
-    private static bool Prefix(Player creator,
+    private static bool Prefix(Player? creator,
         ref Task<IReadOnlyList<CardPileAddResult>> __result)
     {
-        if (!SilencePower.IsActingIn(creator.Creature.CombatState))
+        if (creator is null || !SilencePower.IsActingIn(creator.Creature.CombatState))
         {
             return true;
         }

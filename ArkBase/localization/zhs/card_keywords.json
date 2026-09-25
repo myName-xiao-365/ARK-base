@@ -12,5 +12,7 @@
   "ARK_BASE_KEYWORD_FORCED_EXIT.title": "强制退出战场",
   "ARK_BASE_KEYWORD_FORCED_EXIT.description": "使该生物立即离开本场战斗。",
   "ARK_BASE_KEYWORD_SILENCE.title": "沉默",
-  "ARK_BASE_KEYWORD_SILENCE.description": "沉默的生物本回合无法释放技能。"
+  "ARK_BASE_KEYWORD_SILENCE.description": "沉默的生物本回合无法释放技能。",
+  "ARK_BASE_KEYWORD_FEAR.title": "恐惧",
+  "ARK_BASE_KEYWORD_FEAR.description": "每有1层恐惧，受到的伤害提升10%。"
 }

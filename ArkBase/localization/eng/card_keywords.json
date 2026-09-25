@@ -12,5 +12,7 @@
   "ARK_BASE_KEYWORD_REGEN.title": "Regen",
   "ARK_BASE_KEYWORD_REGEN.description": "At end of turn, heal HP equal to Regen, then reduce Regen by 1.",
   "ARK_BASE_KEYWORD_FORCED_EXIT.title": "Forced Exit",
-  "ARK_BASE_KEYWORD_FORCED_EXIT.description": "This creature immediately leaves the current combat."
+  "ARK_BASE_KEYWORD_FORCED_EXIT.description": "This creature immediately leaves the current combat.",
+  "ARK_BASE_KEYWORD_FEAR.title": "Fear",
+  "ARK_BASE_KEYWORD_FEAR.description": "Take 10% more damage for each stack of Fear."
 }

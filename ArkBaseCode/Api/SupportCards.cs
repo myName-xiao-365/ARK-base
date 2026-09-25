@@ -17,7 +17,7 @@ public static class SupportCards
             .ToArray();
 
     public static bool CanPromote(CardModel card) => card is
-        SilentNurture or RongHeJuYing or Polu or MeiYingMiJi;
+        SilentNurture or RongHeJuYing or Polu or MeiYingMiJi or ChixiaoBengye or PureForce or NightEcho or FinalCalamity;
 
     public static async Task<CardPileAddResult?> Promote(
         CardModel card,
@@ -30,6 +30,10 @@ public static class SupportCards
             RongHeJuYing => await CardCmd.TransformTo<Ember>(card, previewStyle),
             Polu => await CardCmd.TransformTo<CandleShadow>(card, previewStyle),
             MeiYingMiJi => await CardCmd.TransformTo<Hemoptysis>(card, previewStyle),
+            ChixiaoBengye => await CardCmd.TransformTo<ChixiaoTianwei>(card, previewStyle),
+            PureForce => await CardCmd.TransformTo<InnateWarrior>(card, previewStyle),
+            NightEcho => await CardCmd.TransformTo<EmptyTheater>(card, previewStyle),
+            FinalCalamity => await CardCmd.TransformTo<HeadWolf>(card, previewStyle),
             _ => null
         };
 

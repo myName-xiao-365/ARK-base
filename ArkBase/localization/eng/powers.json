@@ -19,5 +19,14 @@
   "ARK_BASE_POWER_SLUGGISH_STUN_LIMITER_POWER.smartDescription": "You can only play [blue]1[/blue] more card this turn.",
   "ARK_BASE_POWER_EMBER_POWER.title": "Ember",
   "ARK_BASE_POWER_EMBER_POWER.description": "Your HP cannot fall below 1. You cannot regain HP. Leave combat when the duration expires.",
-  "ARK_BASE_POWER_EMBER_POWER.smartDescription": "Your HP cannot fall below [blue]1[/blue]. You cannot regain HP. Leave combat when the duration expires."
+  "ARK_BASE_POWER_EMBER_POWER.smartDescription": "Your HP cannot fall below [blue]1[/blue]. You cannot regain HP. Leave combat when the duration expires.",
+  "ARK_BASE_POWER_ORIGINIUM_POWER.title": "Originium",
+  "ARK_BASE_POWER_ORIGINIUM_POWER.description": "Damage dealt is doubled this turn. Take 2 damage for each attack hit.",
+  "ARK_BASE_POWER_ORIGINIUM_POWER.smartDescription": "Damage dealt is doubled this turn. Take [blue]2[/blue] damage for each attack hit.",
+  "ARK_BASE_POWER_FEAR_POWER.title": "Fear",
+  "ARK_BASE_POWER_FEAR_POWER.description": "Take 10% more damage for each stack of Fear.",
+  "ARK_BASE_POWER_FEAR_POWER.smartDescription": "Take [blue]10%[/blue] more damage for each stack of Fear.",
+  "ARK_BASE_POWER_HEAD_WOLF_COOLDOWN_POWER.title": "Head Wolf Cooldown",
+  "ARK_BASE_POWER_HEAD_WOLF_COOLDOWN_POWER.description": "Play {Amount} more attacks to return Head Wolf from the Exhaust pile to your hand.",
+  "ARK_BASE_POWER_HEAD_WOLF_COOLDOWN_POWER.smartDescription": "Play [blue]{Amount}[/blue] more attacks to return Head Wolf from the Exhaust pile to your hand."
 }

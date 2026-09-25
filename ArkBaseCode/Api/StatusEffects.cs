@@ -28,6 +28,16 @@ public static class StatusEffects
         CardModel? source = null) =>
         PowerCmd.Apply<SilencePower>(context, target, stacks, applier, source);
 
+    public static Task<OriginiumPower?> ApplyOriginium(
+        PlayerChoiceContext context, Creature target, Creature applier,
+        CardModel? source = null) =>
+        PowerCmd.Apply<OriginiumPower>(context, target, 1, applier, source);
+
+    public static Task<FearPower?> ApplyFear(
+        PlayerChoiceContext context, Creature target, int stacks, Creature applier,
+        CardModel? source = null) =>
+        PowerCmd.Apply<FearPower>(context, target, stacks, applier, source);
+
     public static Task Stun(
         PlayerChoiceContext context, Creature target, Creature applier,
         CardModel? source = null) =>

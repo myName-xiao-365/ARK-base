@@ -19,5 +19,14 @@
   "ARK_BASE_POWER_SLUGGISH_STUN_LIMITER_POWER.smartDescription": "敌人在其下一回合无法行动，角色本回合仅能打出 [blue]1[/blue] 张牌。",
   "ARK_BASE_POWER_EMBER_POWER.title": "余烬",
   "ARK_BASE_POWER_EMBER_POWER.description": "生命值不会低于 1。无法回复生命值。时限结束时[gold]强制退出战场[/gold]。",
-  "ARK_BASE_POWER_EMBER_POWER.smartDescription": "生命值不会低于 [blue]1[/blue]。无法回复生命值。时限结束时[gold]强制退出战场[/gold]。"
+  "ARK_BASE_POWER_EMBER_POWER.smartDescription": "生命值不会低于 [blue]1[/blue]。无法回复生命值。时限结束时[gold]强制退出战场[/gold]。",
+  "ARK_BASE_POWER_ORIGINIUM_POWER.title": "源石",
+  "ARK_BASE_POWER_ORIGINIUM_POWER.description": "本回合造成的伤害翻倍，每次攻击受到2点伤害。",
+  "ARK_BASE_POWER_ORIGINIUM_POWER.smartDescription": "本回合造成的伤害翻倍，每次攻击受到[blue]2[/blue]点伤害。",
+  "ARK_BASE_POWER_FEAR_POWER.title": "恐惧",
+  "ARK_BASE_POWER_FEAR_POWER.description": "每有1层恐惧，受到的伤害提升10%。",
+  "ARK_BASE_POWER_FEAR_POWER.smartDescription": "每有[blue]1[/blue]层恐惧，受到的伤害提升[blue]10%[/blue]。",
+  "ARK_BASE_POWER_HEAD_WOLF_COOLDOWN_POWER.title": "头狼冷却",
+  "ARK_BASE_POWER_HEAD_WOLF_COOLDOWN_POWER.description": "再打出 {Amount} 张攻击牌，头狼将从消耗牌堆返回手牌。",
+  "ARK_BASE_POWER_HEAD_WOLF_COOLDOWN_POWER.smartDescription": "再打出 [blue]{Amount}[/blue] 张攻击牌，头狼将从消耗牌堆返回手牌。"
 }
