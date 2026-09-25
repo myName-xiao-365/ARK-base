@@ -1,0 +1,16 @@
+{
+  "ARK_BASE_KEYWORD_SLUGGISH.title": "Sluggish",
+  "ARK_BASE_KEYWORD_SLUGGISH.description": "Each stack lowers attack damage dealt by 5%. Whenever an enemy gains 1 Sluggish, it loses 1 random positive buff. At the trigger threshold, enemies lose that many stacks and become Stunned; the player clears Sluggish and becomes Stunned this turn.",
+  "ARK_BASE_KEYWORD_SILENCE.title": "Silence",
+  "ARK_BASE_KEYWORD_SILENCE.description": "This creature cannot use skills this turn.",
+  "ARK_BASE_KEYWORD_SHIVER.title": "Shiver",
+  "ARK_BASE_KEYWORD_SHIVER.description": "This creature's attacks fail this turn.",
+  "ARK_BASE_KEYWORD_PARALYSIS.title": "Paralysis",
+  "ARK_BASE_KEYWORD_PARALYSIS.description": "The next attack fails and consumes 1 Paralysis. Stacks up to 3.",
+  "ARK_BASE_KEYWORD_POISON.title": "Poison",
+  "ARK_BASE_KEYWORD_POISON.description": "At end of turn, lose HP equal to Poison, then reduce Poison by 1.",
+  "ARK_BASE_KEYWORD_REGEN.title": "Regen",
+  "ARK_BASE_KEYWORD_REGEN.description": "At end of turn, heal HP equal to Regen, then reduce Regen by 1.",
+  "ARK_BASE_KEYWORD_FORCED_EXIT.title": "Forced Exit",
+  "ARK_BASE_KEYWORD_FORCED_EXIT.description": "This creature immediately leaves the current combat."
+}

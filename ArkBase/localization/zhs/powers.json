@@ -1,0 +1,23 @@
+{
+  "ARK_BASE_POWER_SLUGGISH_POWER.title": "迟钝",
+  "ARK_BASE_POWER_SLUGGISH_POWER.description": "每层[gold]迟钝[/gold]使该生物造成的伤害降低5%。达到10层时，消耗并进入眩晕。敌人每获得1层[gold]迟钝[/gold]，随机减少1层增益。",
+  "ARK_BASE_POWER_SLUGGISH_POWER.smartDescription": "每层[gold]迟钝[/gold]使该生物造成的伤害降低[blue]5%[/blue]。达到[blue]10[/blue]层时，消耗并进入眩晕。敌人每获得[blue]1[/blue]层[gold]迟钝[/gold]，随机减少[blue]1[/blue]层增益。",
+  "ARK_BASE_POWER_SHIVER_POWER.title": "战栗",
+  "ARK_BASE_POWER_SHIVER_POWER.description": "战栗的生物本回合的攻击失效。",
+  "ARK_BASE_POWER_SHIVER_POWER.smartDescription": "战栗的生物本回合的攻击失效。",
+  "ARK_BASE_POWER_SILENCE_POWER.title": "沉默",
+  "ARK_BASE_POWER_SILENCE_POWER.description": "沉默的生物本回合无法释放技能。",
+  "ARK_BASE_POWER_SILENCE_POWER.smartDescription": "沉默的生物本回合无法释放技能。",
+  "ARK_BASE_POWER_PARALYSIS_POWER.title": "麻痹",
+  "ARK_BASE_POWER_PARALYSIS_POWER.description": "麻痹的生物下一次攻击失效，每次攻击消耗1层麻痹。最多叠加3层。",
+  "ARK_BASE_POWER_PARALYSIS_POWER.smartDescription": "麻痹的生物下一次攻击失效，每次攻击消耗[blue]1[/blue]层麻痹。最多叠加[blue]3[/blue]层。",
+  "ARK_BASE_POWER_DELAYED_SLUGGISH_STUN_POWER.title": "眩晕预备",
+  "ARK_BASE_POWER_DELAYED_SLUGGISH_STUN_POWER.description": "下回合开始时进入眩晕。",
+  "ARK_BASE_POWER_DELAYED_SLUGGISH_STUN_POWER.smartDescription": "下回合开始时进入眩晕。",
+  "ARK_BASE_POWER_SLUGGISH_STUN_LIMITER_POWER.title": "眩晕",
+  "ARK_BASE_POWER_SLUGGISH_STUN_LIMITER_POWER.description": "敌人在其下一回合无法行动，角色本回合仅能打出 1 张牌。",
+  "ARK_BASE_POWER_SLUGGISH_STUN_LIMITER_POWER.smartDescription": "敌人在其下一回合无法行动，角色本回合仅能打出 [blue]1[/blue] 张牌。",
+  "ARK_BASE_POWER_EMBER_POWER.title": "余烬",
+  "ARK_BASE_POWER_EMBER_POWER.description": "生命值不会低于 1。无法回复生命值。时限结束时[gold]强制退出战场[/gold]。",
+  "ARK_BASE_POWER_EMBER_POWER.smartDescription": "生命值不会低于 [blue]1[/blue]。无法回复生命值。时限结束时[gold]强制退出战场[/gold]。"
+}

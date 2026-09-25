@@ -1,0 +1,18 @@
+{
+  "id": "ArkBase",
+  "name": "明日方舟基础内容",
+  "pck_name": "ArkBase",
+  "author": "火山温泉浴",
+  "description": "Shared status effects and support cards for Arknights mods.",
+  "version": "0.1.0",
+  "has_pck": true,
+  "has_dll": true,
+  "affects_gameplay": true,
+  "min_game_version": "0.106.0",
+  "dependencies": [
+    {
+      "id": "STS2-RitsuLib",
+      "version": "0.5.20"
+    }
+  ]
+}
