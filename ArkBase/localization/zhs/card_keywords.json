@@ -1,6 +1,10 @@
 {
+  "ARK_BASE_KEYWORD_WANTED.title": "通缉",
+  "ARK_BASE_KEYWORD_WANTED.description": "我方回合结束时，敌人受到等同于[gold]通缉[/gold]层数的伤害。若被该伤害击杀，施加者获得30金币。造成伤害后移除[gold]通缉[/gold]。",
+  "ARK_BASE_KEYWORD_MARKED.title": "标记",
+  "ARK_BASE_KEYWORD_MARKED.description": "我方回合结束时，敌人受到5点伤害，次数等同于[gold]标记[/gold]层数，然后减少1层[gold]标记[/gold]。",
   "ARK_BASE_KEYWORD_SLUGGISH.title": "迟钝",
-  "ARK_BASE_KEYWORD_SLUGGISH.description": "每层[gold]迟钝[/gold]使该生物造成的伤害降低5%。达到10层时，消耗并进入眩晕。敌人每获得1层[gold]迟钝[/gold]，随机减少1层增益。",
+  "ARK_BASE_KEYWORD_SLUGGISH.description": "每层[gold]迟钝[/gold]使该生物造成的伤害加算降低5%。达到10层时，消耗并进入眩晕。敌人每获得1层[gold]迟钝[/gold]，随机减少1层增益。",
   "ARK_BASE_KEYWORD_SHIVER.title": "战栗",
   "ARK_BASE_KEYWORD_SHIVER.description": "战栗的生物本回合的攻击失效。",
   "ARK_BASE_KEYWORD_PARALYSIS.title": "麻痹",
@@ -14,5 +18,13 @@
   "ARK_BASE_KEYWORD_SILENCE.title": "沉默",
   "ARK_BASE_KEYWORD_SILENCE.description": "沉默的生物本回合无法释放技能。",
   "ARK_BASE_KEYWORD_FEAR.title": "恐惧",
-  "ARK_BASE_KEYWORD_FEAR.description": "每有1层恐惧，受到的伤害提升10%。"
+  "ARK_BASE_KEYWORD_FEAR.description": "每层[gold]恐惧[/gold]使受到的伤害加算提高10%。",
+  "ARK_BASE_KEYWORD_RECONSTRUCTION_BODY.title": "重构体",
+  "ARK_BASE_KEYWORD_RECONSTRUCTION_BODY.description": "持续1回合。存在其他存活队友时，自身回复生命后，所有存活队友回复该治疗量的一半。没有存活队友时，自身回复量提高50%。",
+  "ARK_BASE_KEYWORD_BLOCK.title": "格挡",
+  "ARK_BASE_KEYWORD_BLOCK.description": "在下个回合前，阻挡伤害。",
+  "ARK_BASE_KEYWORD_SERVANT.title": "仆役",
+  "ARK_BASE_KEYWORD_SERVANT.description": "每回合开始时，奥斯提对随机敌人造成等同于其当前生命值的伤害。\n奥斯提死亡时结束。",
+  "ARK_BASE_KEYWORD_VERDANT_SOIL.title": "沃土",
+  "ARK_BASE_KEYWORD_VERDANT_SOIL.description": "抵挡一次伤害。消耗时回复 4 点生命值。"
 }

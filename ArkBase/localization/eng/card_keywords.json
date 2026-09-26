@@ -1,6 +1,10 @@
 {
+  "ARK_BASE_KEYWORD_WANTED.title": "Wanted",
+  "ARK_BASE_KEYWORD_WANTED.description": "At the end of the player turn, the enemy takes damage equal to its [gold]Wanted[/gold] stacks. If killed by this damage, the applier gains 30 Gold. Remove [gold]Wanted[/gold] after dealing damage.",
+  "ARK_BASE_KEYWORD_MARKED.title": "Marked",
+  "ARK_BASE_KEYWORD_MARKED.description": "At the end of the player turn, the enemy takes 5 damage once per [gold]Marked[/gold] stack, then loses 1 stack of [gold]Marked[/gold].",
   "ARK_BASE_KEYWORD_SLUGGISH.title": "Sluggish",
-  "ARK_BASE_KEYWORD_SLUGGISH.description": "Each stack lowers attack damage dealt by 5%. Whenever an enemy gains 1 Sluggish, it loses 1 random positive buff. At the trigger threshold, enemies lose that many stacks and become Stunned; the player clears Sluggish and becomes Stunned this turn.",
+  "ARK_BASE_KEYWORD_SLUGGISH.description": "Each stack additively lowers damage dealt by 5% (1 stack: 95% damage; 2 stacks: 90%). Whenever an enemy gains 1 Sluggish, it loses 1 random positive buff. At the trigger threshold, enemies lose that many stacks and become Stunned; the player clears Sluggish and becomes Stunned this turn.",
   "ARK_BASE_KEYWORD_SILENCE.title": "Silence",
   "ARK_BASE_KEYWORD_SILENCE.description": "This creature cannot use skills this turn.",
   "ARK_BASE_KEYWORD_SHIVER.title": "Shiver",
@@ -14,5 +18,13 @@
   "ARK_BASE_KEYWORD_FORCED_EXIT.title": "Forced Exit",
   "ARK_BASE_KEYWORD_FORCED_EXIT.description": "This creature immediately leaves the current combat.",
   "ARK_BASE_KEYWORD_FEAR.title": "Fear",
-  "ARK_BASE_KEYWORD_FEAR.description": "Take 10% more damage for each stack of Fear."
+  "ARK_BASE_KEYWORD_FEAR.description": "Each stack additively increases damage taken by 10% (1 stack: 110%; 2 stacks: 120%).",
+  "ARK_BASE_KEYWORD_RECONSTRUCTION_BODY.title": "Reconstructed Body",
+  "ARK_BASE_KEYWORD_RECONSTRUCTION_BODY.description": "Lasts 1 turn. If another living teammate is present, whenever you heal, all living teammates heal for half that amount. If no living teammates are present, your healing is increased by 50%.",
+  "ARK_BASE_KEYWORD_BLOCK.title": "Block",
+  "ARK_BASE_KEYWORD_BLOCK.description": "Prevent damage until the next turn.",
+  "ARK_BASE_KEYWORD_SERVANT.title": "Servant",
+  "ARK_BASE_KEYWORD_SERVANT.description": "At the start of each turn, Osty attacks a random enemy for damage equal to its current HP.\nEnds when Osty dies.",
+  "ARK_BASE_KEYWORD_VERDANT_SOIL.title": "Verdant Soil",
+  "ARK_BASE_KEYWORD_VERDANT_SOIL.description": "Prevent one instance of damage. Heal 4 HP when consumed."
 }

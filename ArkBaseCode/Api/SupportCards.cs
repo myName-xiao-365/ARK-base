@@ -17,7 +17,7 @@ public static class SupportCards
             .ToArray();
 
     public static bool CanPromote(CardModel card) => card is
-        SilentNurture or RongHeJuYing or Polu or MeiYingMiJi or ChixiaoBengye or PureForce or NightEcho or FinalCalamity;
+        SelfRepair or SilentNurture or RongHeJuYing or Polu or MeiYingMiJi or ChixiaoBengye or PureForce or NightEcho or FinalCalamity or RockslideHammer or HeartLash or DimmedAfterglow or HomecomingInvitation;
 
     public static async Task<CardPileAddResult?> Promote(
         CardModel card,
@@ -26,6 +26,7 @@ public static class SupportCards
         bool wasUpgraded = card.IsUpgraded;
         CardPileAddResult? result = card switch
         {
+            SelfRepair => await CardCmd.TransformTo<StrategyMelt>(card, previewStyle),
             SilentNurture => await CardCmd.TransformTo<Yinyun>(card, previewStyle),
             RongHeJuYing => await CardCmd.TransformTo<Ember>(card, previewStyle),
             Polu => await CardCmd.TransformTo<CandleShadow>(card, previewStyle),
@@ -34,6 +35,10 @@ public static class SupportCards
             PureForce => await CardCmd.TransformTo<InnateWarrior>(card, previewStyle),
             NightEcho => await CardCmd.TransformTo<EmptyTheater>(card, previewStyle),
             FinalCalamity => await CardCmd.TransformTo<HeadWolf>(card, previewStyle),
+            RockslideHammer => await CardCmd.TransformTo<VerdantSoilForBody>(card, previewStyle),
+            HeartLash => await CardCmd.TransformTo<Dreadburst>(card, previewStyle),
+            DimmedAfterglow => await CardCmd.TransformTo<CrownOfTheDead>(card, previewStyle),
+            HomecomingInvitation => await CardCmd.TransformTo<SalvoForcedRemembrance>(card, previewStyle),
             _ => null
         };
 

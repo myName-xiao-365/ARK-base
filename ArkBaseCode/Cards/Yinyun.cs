@@ -27,9 +27,8 @@ public sealed class Yinyun : SupportCardTemplate
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new HealVar(8m),
-        new PowerVar<RegenPower>(4m),
-        new DynamicVar("MaxHp", 3)
+        new HealVar(6m),
+        new PowerVar<RegenPower>(4m)
     ];
 
     public Yinyun() : base(BaseEnergyCost, CardKind, CardRarityValue, CardTarget)
@@ -45,13 +44,11 @@ public sealed class Yinyun : SupportCardTemplate
             DynamicVars[nameof(RegenPower)].BaseValue,
             Owner.Creature,
             this);
-        await CreatureCmd.GainMaxHp(Owner.Creature, DynamicVars["MaxHp"].BaseValue);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Heal.UpgradeValueBy(2m);
         DynamicVars[nameof(RegenPower)].UpgradeValueBy(1m);
-        DynamicVars["MaxHp"].UpgradeValueBy(1);
     }
 }

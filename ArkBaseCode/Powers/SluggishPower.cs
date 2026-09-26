@@ -21,6 +21,12 @@ public sealed class SluggishPower : ModPowerTemplate
     public const int StunThreshold = 10;
     public const decimal DamageLossPerStack = 0.05m;
 
+    public static decimal GetDamageMultiplierForStacks(int stacks)
+    {
+        int effectiveStacks = Math.Clamp(stacks, 0, StunThreshold - 1);
+        return Math.Max(0m, 1m - effectiveStacks * DamageLossPerStack);
+    }
+
     private static readonly HashSet<string> LockedBuffPowerNames =
     [
         "EscapeArtistPower",
@@ -70,9 +76,7 @@ public sealed class SluggishPower : ModPowerTemplate
             return 1m;
         }
 
-        int stunThreshold = GetStunThreshold();
-        int stacks = Math.Clamp(Amount, 0, stunThreshold - 1);
-        return Math.Max(0m, 1m - stacks * DamageLossPerStack);
+        return GetDamageMultiplierForStacks(Amount);
     }
 
     public override async Task AfterPowerAmountChanged(

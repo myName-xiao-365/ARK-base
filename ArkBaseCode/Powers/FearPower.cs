@@ -10,6 +10,11 @@ namespace ArkBase.Powers;
 [RegisterPower]
 public sealed class FearPower : ModPowerTemplate
 {
+    public const decimal DamageTakenIncreasePerStack = 0.1m;
+
+    public static decimal GetDamageTakenMultiplierForStacks(int stacks) =>
+        1m + Math.Max(0, stacks) * DamageTakenIncreasePerStack;
+
     public override PowerType Type => PowerType.Debuff;
 
     public override PowerStackType StackType => PowerStackType.Counter;
@@ -25,6 +30,6 @@ public sealed class FearPower : ModPowerTemplate
         Creature? dealer,
         CardModel? cardSource) =>
         Amount > 0 && ReferenceEquals(target, Owner)
-            ? 1m + Amount * 0.1m
+            ? GetDamageTakenMultiplierForStacks(Amount)
             : 1m;
 }

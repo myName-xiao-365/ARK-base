@@ -2,11 +2,8 @@ using ArkBase.Characters;
 using ArkBase.Keywords;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using STS2RitsuLib.Interop.AutoRegistration;
 using STS2RitsuLib.Scaffolding.Content;
@@ -14,22 +11,23 @@ using STS2RitsuLib.Scaffolding.Content;
 namespace ArkBase.Cards;
 
 [RegisterCard(typeof(ArkSupportCardPool))]
-public sealed class MeiYingMiJi : SupportCardTemplate
+public sealed class RockslideHammer : SupportCardTemplate
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords =>
-        [.. base.CanonicalKeywords, ArkKeywords.Poison];
+        [.. base.CanonicalKeywords, ArkKeywords.Block];
+
+    public override bool GainsBlock => true;
 
     public override CardAssetProfile AssetProfile => new(
-        PortraitPath: $"{Entry.ResPath}/images/cards/MeiYingMiJi.png");
+        PortraitPath: $"{Entry.ResPath}/images/cards/RockslideHammer.png");
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(4, ValueProp.Move),
-        new DynamicVar("HitCount", 2),
-        new PowerVar<PoisonPower>(1)
+        new DamageVar(6, ValueProp.Move),
+        new BlockVar(6m, ValueProp.Move)
     ];
 
-    public MeiYingMiJi() : base(1, CardType.Attack, CardRarity.Common, TargetType.AllEnemies)
+    public RockslideHammer() : base(1, CardType.Attack, CardRarity.Common, TargetType.AllEnemies)
     {
     }
 
@@ -40,32 +38,17 @@ public sealed class MeiYingMiJi : SupportCardTemplate
             return;
         }
 
-        List<Creature> targets = combatState.HittableEnemies.ToList();
-        if (targets.Count == 0)
-        {
-            return;
-        }
-
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
-            .WithHitCount((int)DynamicVars["HitCount"].BaseValue)
             .FromCard(this)
             .TargetingAllOpponents(combatState)
             .Execute(choiceContext);
 
-        foreach (Creature target in targets.Where(target => target.IsAlive))
-        {
-            await PowerCmd.Apply<PoisonPower>(
-                choiceContext,
-                target,
-                DynamicVars[nameof(PoisonPower)].BaseValue,
-                Owner.Creature,
-                this);
-        }
+        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2);
-        DynamicVars[nameof(PoisonPower)].UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(2m);
     }
 }
